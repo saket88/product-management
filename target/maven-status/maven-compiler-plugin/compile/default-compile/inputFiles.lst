@@ -1,0 +1,11 @@
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/resources/ResourceProductController.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/product/ProductServer.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/product/Product.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/product/ProductConfigurer.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/resources/ResourceProductService.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/resources/ResourceServer.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/product/ProductController.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/product/ProductDTO.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/product/ProductRepository.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/price/PriceServer.java
+/Users/saket/Documents/Microservices/product-management-parent/src/main/java/org/sapient/microservices/registration/RegistrationServer.java

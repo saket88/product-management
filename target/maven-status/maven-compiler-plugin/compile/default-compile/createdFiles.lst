@@ -1,0 +1,11 @@
+org/sapient/microservices/price/PriceServer.class
+org/sapient/microservices/product/ProductServer.class
+org/sapient/microservices/product/ProductConfigurer.class
+org/sapient/microservices/product/Product.class
+org/sapient/microservices/registration/RegistrationServer.class
+org/sapient/microservices/product/ProductController.class
+org/sapient/microservices/resources/ResourceProductController.class
+org/sapient/microservices/resources/ResourceProductService.class
+org/sapient/microservices/product/ProductRepository.class
+org/sapient/microservices/product/ProductDTO.class
+org/sapient/microservices/resources/ResourceServer.class
