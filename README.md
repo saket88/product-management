@@ -1,5 +1,5 @@
 # product-management
-This project is borken into a collection of microservices. They are as below
+This project is broken into a collection of microservices. They are as below
 
 Product Catalogue Service 
 
@@ -17,10 +17,11 @@ Return the price for a given product
 
 
 There are four broad levels of Microservices used
-1>RegistrationServer - This is used as a service discovery agent and all the other microservices registers into this.
-2>ProductServer- This acts as a microservice for Product Catalogue Service. 
+
+1> RegistrationServer - This is used as a service discovery agent and all the other microservices registers into this.
+2> ProductServer- This acts as a microservice for Product Catalogue Service. 
 3> ProductPriceServer-This acts as a microservice for Pricing Service.
-4>ResourceServer- This microservice provides an dactually wrapper to the functional services.
+4> ResourceServer- This microservice provides an dactually wrapper to the functional services.
 
 Inorder to start the application run all the classes mentioned above in the order mentioned above. 
 
@@ -36,17 +37,15 @@ There are following functions as below
 2> Save a Product
 
     eg http://localhost:3333/product (POST)
-    
     Data
-        {
-"code":"87687676",
- "name":"Parachute",
- "type":"Hair oil"
-}
+    {
+     "code":"87687676",
+     "name":"Parachute",
+     "type":"Hair oil"
+    }
 
 3> Delete a Product 
-
-eg http://localhost:3333/product/1 (DELETE)
+    eg http://localhost:3333/product/1 (DELETE)
 
 4> Find the price of the product by its code
-eg http://localhost:3333/productPrice/code/123456789
+   eg http://localhost:3333/productPrice/code/123456789
