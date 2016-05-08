@@ -1,6 +1,7 @@
-package org.sapient.microservices.product;
+package org.sapient.microservices.price;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,8 +13,8 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name="T_PRODUCT")
-public class Product implements Serializable{
+@Table(name="T_PRODUCT_PRICE")
+public class ProductPrice implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	public static Long nextId = 0L;
@@ -23,31 +24,12 @@ public class Product implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	protected Long id;
 
+	@Column(name="product_code")
 	protected String code;
+	
+	protected BigDecimal price;
 
-	public String getCode() {
-		return code;
-	}
-
-	public void setCode(String code) {
-		this.code = code;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
+	
 
 
     @JsonIgnore
@@ -55,11 +37,9 @@ public class Product implements Serializable{
 		this.id = id;
 	}
 
-	protected String name;
+	
 
-	@Column(name="product_type")
-	protected String type;
-
+	
 	protected static Long getNextId() {
 		synchronized (nextId) {
 			return nextId++;
@@ -69,7 +49,7 @@ public class Product implements Serializable{
 	/**
 	 * Default constructor for JPA only.
 	 */
-	protected Product() {
+	protected ProductPrice() {
 		id = getNextId();
 	}
 
@@ -87,5 +67,23 @@ public class Product implements Serializable{
 		this.id = id;
 	}
 
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	
+	
 
 }

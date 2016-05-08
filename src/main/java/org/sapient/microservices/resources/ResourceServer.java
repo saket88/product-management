@@ -18,6 +18,7 @@ public class ResourceServer {
 	 * doesn't matter.
 	 */
 	public static final String PRODUCT_SERVICE_URL = "http://PRODUCT-SERVICE";
+	public static final String PRICING_SERVICE_URL = "http://PRICE-SERVICE";
 
 	/**
 	 * Run the application using Spring Boot and an embedded servlet engine.
@@ -51,5 +52,24 @@ public class ResourceServer {
 		return new ResourceProductController(productsService());
 	}
 
+	/**
+	 * The AccountService encapsulates the interaction with the micro-service.
+	 * 
+	 * @return A new service instance.
+	 */
+	@Bean
+	public ResourcePricingService pricingService() {
+		return new ResourcePricingService(PRICING_SERVICE_URL);
+	}
+
+	/**
+	 * Create the controller, passing it the {@link WebAccountsService} to use.
+	 * 
+	 * @return
+	 */
+	@Bean
+	public ResourcePricingController productPriceController() {
+		return new ResourcePricingController(pricingService());
+	}
 
 }
